@@ -360,7 +360,6 @@ UnityWindowsTTS/ExportedObj/
 UnityWindowsTTS/.consulo/
 *.csproj
 *.unityproj
-*.sln
 *.suo
 *.tmp
 *.user
