@@ -21,6 +21,13 @@ This source code was originally from [here](https://chadweisshaar.com/blog/2015/
 * Open the sample scene file in UnityWindowsTTS\Assets\Scenes folder.
 * Check the WindowsTTS.dll is in the right place.
 * Run the scene and press the button.
+* If it doesn't make any sound: 
+  * Select the Narrator in the scene, press Add Component, and select 'Narrator'.
+  * Select the Button under Canvas in the scene, drag and drop the Narrator to the object in On Click() at Button (Script), and change it from No function to Narrator.TestSpeech.
+  * Then give it a try.
+
+## Tip
+* You can change the voice by 'Voice Idx' of Narrator, but the index seems to be assigned dynamic somehow. We will update that later.
 
 ## License
 * MIT license
