@@ -33,6 +33,9 @@ namespace ACTA
         [DllImport("WindowsTTS")]
         public static extern void changeVoice(int vIdx);
         
+        [DllImport("WindowsTTS")]
+        public static extern bool isSpeaking();
+        
         public CONTEXT mode;
 
         public static Narrator theVoice = null;
