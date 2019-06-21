@@ -1,5 +1,5 @@
 # UnityWindowsTTS
-Text-To-Speech for Unity + Windows
+Text-To-Speech for Unity + Windows.
 We thank Chad Weisshaar for allowing to share this source code.
 This source code was originally from [here](https://chadweisshaar.com/blog/2015/07/02/microsoft-speech-for-unity/). 
 
