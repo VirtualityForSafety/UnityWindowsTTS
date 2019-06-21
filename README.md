@@ -33,5 +33,5 @@ This source code was originally from [here](https://chadweisshaar.com/blog/2015/
 * MIT license
 
 ## Maintainer
-* Jinki Jung
+* [Jinki Jung](https://github.com/JinkiJung)
 
