@@ -81,7 +81,7 @@ namespace ACTA
         {
             changeVoice(voiceIdx);
         }
-
+        
         public void TestSpeech()
         {
             Narrator.speak("Do you hear me?", false);
@@ -97,6 +97,7 @@ namespace ACTA
                 //Narrator.speak("거기 문제 있나요?", false);
             }
             //*/
+            Narrator.speak("Hello", true);
         }
 
         private void OnApplicationQuit()

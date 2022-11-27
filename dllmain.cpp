@@ -133,10 +133,13 @@ namespace WindowsTTS {
           if (!theSpeechQueue.empty())
           {
             theMutex.lock();
-            if (lstrcmpW(theSpeechQueue.front(), priorText) == 0)
+            if (!theSpeechQueue.empty())
             {
-              delete[] theSpeechQueue.front();
-              theSpeechQueue.pop_front();
+                if (lstrcmpW(theSpeechQueue.front(), priorText) == 0)
+                {
+                    delete[] theSpeechQueue.front();
+                    theSpeechQueue.pop_front();
+                }
             }
             theMutex.unlock();
           }
@@ -154,8 +157,11 @@ namespace WindowsTTS {
         if (!theSpeechQueue.empty())
         {
           theMutex.lock();
-          priorText = theSpeechQueue.front();
-          theSpeechQueue.pop_front();
+          if (!theSpeechQueue.empty())
+          {
+              priorText = theSpeechQueue.front();
+              theSpeechQueue.pop_front();
+          }
           theMutex.unlock();
           //pVoice->Speak(priorText, SPF_IS_XML | SPF_ASYNC, NULL);
 		  cpVoice->Speak(priorText, SPF_IS_XML | SPF_ASYNC, NULL);
